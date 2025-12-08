@@ -7,7 +7,7 @@
     <meta content="" name="description">
     <meta content="" name="keywords">
     <meta content="telephone=no" name="format-detection">
-    <title>not-found</title>
+    <title>contacts</title>
   <link href="main.f20cd62b01dea339c22d.css" rel="stylesheet"></head>
   <body>
     <header class="header">
@@ -42,24 +42,60 @@
       </div>
     </header>
     <main class="root">
-      <section class="not-found">
-        <picture class="not-found__bg"><img class="not-found__img" src="images/hero__one.avif" alt="alt" loading="eager">
-        </picture>
-        <picture class="not-found__bg not-found__bg--mobile"><img class="not-found__img" src="images/hero__one--mobile.avif" alt="alt" loading="eager">
-        </picture>
-        <div class="container not-found__container">
-          <div class="not-found__content-block">
-            <h1 class="not-found__title">404</h1>
-            <p class="not-found__sub-title">
-              Страница не найдена, попробуйте обновить страницу или перейдите на
-              <a href="/">главную страницу</a>
-              в меню
-            </p>
+      <section class="breadcrumbs">
+        <ul class="container breadcrumbs__container">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Главная</a>
+          </li>
+          <li class="breadcrumbs__item"><span class="breadcrumbs__link">Контакты</span>
+          </li>
+        </ul>
+      </section>
+      <section class="contacts">
+        <div class="container">
+          <h1 class="contacts__title">Контакты</h1>
+          <div class="contacts__wrapper">
+            <div class="contacts__info">
+              <h2 class="contacts__info-title">По всем вопросам</h2>
+              <address class="contacts__adress">
+                <div class="contacts__adress-block">
+                  <div class="contacts__adress-block-span">Телефон</div><a class="contacts__adress-block-link" href="tel:+79772766665">+7 (977) 276-66-65</a>
+                </div>
+                <div class="contacts__adress-block">
+                  <div class="contacts__adress-block-span">Электронная почта</div><a class="contacts__adress-block-link" href="mailto:mrboblee@mail.ru">mrboblee@mail.ru</a>
+                </div>
+                <div class="contacts__adress-block">
+                  <div class="contacts__adress-block-span">Инстаграм*</div><a class="contacts__adress-block-link" href="https://www.instagram.com/mister.bob.lee/" target="_blank">@mister.bob.lee</a><span class="contacts__adress-block-alert">*запрещённая в РФ соцсеть компании Meta</span>
+                </div>
+              </address>
+              <hr>
+              <h2 class="contacts__info-title">По всем вопросам</h2>
+              <address class="contacts__adress">
+                <div class="contacts__adress-block contacts__adress-block--hours">
+                  <h3 class="contacts__adress-block-name-store">YAUZA STORE</h3>
+                  <div class="contacts__adress-wrapper">
+                    <div class="contacts__adress-block-span">Адрес</div><a href="https://yandex.ru/maps/-/CLgPBS9W" target="_blank">г. Москва, Лучников пер. 4с1 (м. Китай-Город)</a>
+                  </div>
+                  <div class="contacts__adress-wrapper">
+                    <div class="contacts__adress-block-span">Рабочий график</div>
+                    <div class="contacts__adress-block-hours">12:00 - 21:00, без выходных</div>
+                  </div>
+                </div>
+                <div class="contacts__adress-block contacts__adress-block--hours">
+                  <h3 class="contacts__adress-block-name-store">ODMO</h3>
+                  <div class="contacts__adress-wrapper">
+                    <div class="contacts__adress-block-span">Адрес</div><a href="https://yandex.ru/maps/-/CLgPB6p5" target="_blank">г. Москва, Большой Трехсвятительский  переулок, 2/1 стр 1</a>
+                  </div>
+                  <div class="contacts__adress-wrapper">
+                    <div class="contacts__adress-block-span">Рабочий график</div>
+                    <div class="contacts__adress-block-hours">11:00 - 21:00, без выходных</div>
+                  </div>
+                </div>
+              </address>
+            </div>
+            <div class="contacts__map"></div>
+            <picture class="contacts__pic"><img class="contacts__img" src="images/contacts__img.avif" alt="alt" loading="lazy">
+            </picture>
           </div>
-          <ul class="not-found__list">
-            <li><a class="not-found__link" href="#">Инстаграм<img class="hero__arrow" src="images/arrow-right.svg" alt="alt" loading="lazy"></a></li>
-            <li><a class="not-found__link" href="#">Написать Bob`у<img class="hero__arrow" src="images/arrow-right.svg" alt="alt" loading="lazy"></a></li>
-          </ul>
         </div>
       </section>
     </main>
