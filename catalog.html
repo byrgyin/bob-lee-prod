@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="telephone=no" name="format-detection">
+    <title>catalog</title>
+  <link href="main.b2e70c295ed57ce1a9be.css" rel="stylesheet"></head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <button class="header__button-menu"><span class="header__span-line"></span></button>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a class="header__nav-link" href="#">Каталог</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#">Новинки</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#">LookBook</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#">Контакты</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#">Избранное</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#">Профиль</a></li>
+          </ul>
+          <div class="header__nav-bottom">
+            <ul class="header__nav-bottom-list">
+              <li class="header__nav-bottom-item">Bob</li>
+              <li class="header__nav-bottom-item">Loves</li>
+              <li class="header__nav-bottom-item">You</li>
+            </ul>
+            <ul class="header__nav-bottom-links">
+              <li><a class="header__nav-bottom-link" href="#" target="_blank">Инстаграм<img class="header__nav-bottom-icon" src="images/arrow-right.svg" alt="alt" loading="lazy"></a></li>
+              <li><a class="header__nav-bottom-link" href="#" target="_blank">Написать менеджеру<img class="header__nav-bottom-icon" src="images/arrow-right.svg" alt="alt" loading="lazy"></a></li>
+            </ul>
+          </div>
+        </nav><a class="header__link-logo" href="/"><img class="header__logo" src="images/header__logo.svg" alt="alt" loading="lazy"></a>
+        <ul class="header__store-list">
+          <li class="header__store-item header__cart-item"><a href="#"><img class="header__store-icon" src="images/cart.svg" alt="alt" loading="lazy"></a></li>
+          <li class="header__store-item header__wish-item"><a href="#"><img class="header__store-icon" src="images/wish.svg" alt="alt" loading="lazy"></a></li>
+          <li class="header__store-item header__account-item"><a href="#"><img class="header__store-icon" src="images/account.svg" alt="alt" loading="lazy"></a></li>
+        </ul>
+      </div>
+    </header>
+    <main class="root">
+      <section class="breadcrumbs">
+        <ul class="container breadcrumbs__container">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Главная</a>
+          </li>
+          <li class="breadcrumbs__item"><span class="breadcrumbs__link">Каталог</span>
+          </li>
+        </ul>
+      </section>
+      <section class="catalog">
+        <div class="container">
+          <h1 class="catalog__title">Каталог</h1>
+          <div class="catalog__control-panel">
+            <button class="control-panel__open-filter">Фильтры<img src="images/filters-icon.svg" alt="alt" loading="lazy">
+            </button>
+            <div class="control-panel__find-product">Найдено 26 товаров</div>
+            <div class="control-panel__wrapper-sort">
+              <button class="control-panel__open-sort">Сортировка<img src="images/sort-icon.svg" alt="alt" loading="lazy">
+              </button>
+              <div class="control-panel__wrapper-sort-list">
+                <ul class="control-panel__sort-list">
+                  <li class="control-panel__sort-item">
+                    <button class="control-panel__sort-btn" data-sort="cheap-to-expensive">Дешевле – Дороже</button>
+                  </li>
+                  <li class="control-panel__sort-item">
+                    <button class="control-panel__sort-btn" data-sort="expensive-to-cheap">Дороже – Дешевле</button>
+                  </li>
+                  <li class="control-panel__sort-item">
+                    <button class="control-panel__sort-btn" data-sort="discount">По скидке</button>
+                  </li>
+                  <li class="control-panel__sort-item">
+                    <button class="control-panel__sort-btn" data-sort="novelty">Новинка</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="catalog__wrapper">
+            <aside class="catalog__filter-prod" role="complementary" aria-label="Фильтры товаров">
+              <div class="filter-prod__head">
+                <h2 class="filter-prod__head-title">Фильтры</h2>
+                <button class="filter-prod__close"></button>
+              </div>
+              <form class="filter-prod__form" method="get" action="" aria-label="Форма фильтрации">
+                <fieldset class="filter-prod__fieldset" data-filter-type="category">
+                  <legend class="filter-prod__legend">Тип одежды<img src="images/arrow-down.svg" alt="alt" loading="lazy">
+                  </legend>
+                  <div class="filter-prod__wrap-category-list">
+                    <ul class="filter-prod__category-list">
+                      <li class="filter-prod__item">
+                        <label class="filter-prod__label" for="cat-tshirts">
+                          <input class="filter-prod__input" id="cat-tshirts" type="checkbox" name="filter_cat" value="tshirts"><span>Футболки</span>
+                        </label>
+                      </li>
+                      <li class="filter-prod__item">
+                        <label class="filter-prod__label" for="cat-longsleeve">
+                          <input class="filter-prod__input" id="cat-longsleeve" type="checkbox" name="filter_cat" value="longsleeve"><span>Лонгслив</span>
+                        </label>
+                      </li>
+                      <li class="filter-prod__item">
+                        <label class="filter-prod__label" for="cat-hoodie">
+                          <input class="filter-prod__input" id="cat-hoodie" type="checkbox" name="filter_cat" value="hoodie"><span>Худи</span>
+                        </label>
+                      </li>
+                      <li class="filter-prod__item">
+                        <label class="filter-prod__label" for="cat-trousers">
+                          <input class="filter-prod__input" id="cat-trousers" type="checkbox" name="filter_cat" value="trousers"><span>Брюки</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </fieldset>
+                <fieldset class="filter-prod__fieldset" data-filter-attribute="pa_size">
+                  <legend class="filter-prod__legend">Размер<img src="images/arrow-down.svg" alt="alt" loading="lazy">
+                  </legend>
+                  <div class="filter-prod__wrap-category-list">
+                    <ul class="filter-prod__category-list">
+                      <li class="filter-prod__item">
+                        <label class="filter-prod__label" for="size-o">
+                          <input class="filter-prod__input" id="size-o" type="checkbox" name="filter_size" value="o"><span>O</span>
+                        </label>
+                      </li>
+                      <li class="filter-prod__item">
+                        <label class="filter-prod__label" for="size-os">
+                          <input class="filter-prod__input" id="size-os" type="checkbox" name="filter_size" value="os"><span>OS</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </fieldset>
+                <fieldset class="filter-prod__fieldset" data-filter-attribute="pa_color">
+                  <legend class="filter-prod__legend">Цвет<img src="images/arrow-down.svg" alt="alt" loading="lazy">
+                  </legend>
+                  <div class="filter-prod__wrap-category-list">
+                    <ul class="filter-prod__category-list">
+                      <li class="filter-prod__item">
+                        <label class="filter-prod__label" for="color-black"><span class="filter-prod__color-span" style="background-color: #000000;"></span><span>Черный</span>
+                          <input class="filter-prod__input" id="color-black" type="checkbox" name="filter_size" value="black">
+                        </label>
+                      </li>
+                      <li class="filter-prod__item">
+                        <label class="filter-prod__label" for="color-gray"><span class="filter-prod__color-span" style="background-color: #8C8C8C;"></span><span>Серый</span>
+                          <input class="filter-prod__input" id="color-gray" type="checkbox" name="filter_size" value="gray">
+                        </label>
+                      </li>
+                      <li class="filter-prod__item">
+                        <label class="filter-prod__label" for="color-white"><span class="filter-prod__color-span" style="background-color: #FFFFFF;"></span><span>Белый</span>
+                          <input class="filter-prod__input" id="color-white" type="checkbox" name="filter_size" value="white">
+                        </label>
+                      </li>
+                      <li class="filter-prod__item">
+                        <label class="filter-prod__label" for="color-beige"><span class="filter-prod__color-span" style="background-color: #F5EDCD;"></span><span>Бежевый</span>
+                          <input class="filter-prod__input" id="color-beige" type="checkbox" name="filter_size" value="beige">
+                        </label>
+                      </li>
+                      <li class="filter-prod__item">
+                        <label class="filter-prod__label" for="color-brown"><span class="filter-prod__color-span" style="background-color: #8C3509;"></span><span>Черный</span>
+                          <input class="filter-prod__input" id="color-brown" type="checkbox" name="filter_size" value="brown">
+                        </label>
+                      </li>
+                      <li class="filter-prod__item">
+                        <label class="filter-prod__label" for="color-pink"><span class="filter-prod__color-span" style="background-color: #F2B7C9;"></span><span>Розовый</span>
+                          <input class="filter-prod__input" id="color-pink" type="checkbox" name="filter_size" value="pink">
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </fieldset>
+                <fieldset class="filter-prod__fieldset filter-prod__fieldset-range-price" data-filter-type="price">
+                  <legend class="filter-prod__legend">Цена<img src="images/arrow-down.svg" alt="alt" loading="lazy">
+                  </legend>
+                  <div class="filter-prod__wrap-category-list">
+                    <div class="filter-prod__range-price">
+                      <input class="range-price__min-price" type="number" value="25" min="1" max="100">
+                      <input class="range-price__max-price" type="number" value="75" min="1" max="100">
+                    </div>
+                    <div class="filter-prod__range-slider">
+                      <input class="range-price__min-input" type="range" value="25" min="1" max="100">
+                      <input class="range-price__max-input" type="range" value="75" min="1" max="100">
+                      <div class="range-slider__slider">
+                        <div class="range-slider__progress"></div>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+                <div class="filter-prod__buttons">
+                  <button class="button filter-prod__button filter-prod__apply" type="submit">Применить фильтры</button>
+                  <button class="button button--white filter-prod__button filter-prod__reset" type="reset">Сбросить</button>
+                </div>
+              </form>
+            </aside>
+            <ul class="catalog__list">
+              <li class="catalog__item">
+                <div class="card"><a class="card__link-img" href="/product.html">
+                    <picture class="card__pic"><img class="card__img" src="images/new-product__1.avif" alt="alt" loading="lazy">
+                    </picture></a>
+                  <div class="card__bottom-info"><a class="card__link-item" href="/product.html">Тишка “Garlic bread”</a>
+                    <div class="card__price">8 999 ₽</div>
+                    <div class="card__count">(01)</div>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__item">
+                <div class="card"><a class="card__link-img" href="/product.html">
+                    <picture class="card__pic"><img class="card__img" src="images/new-product__2.avif" alt="alt" loading="lazy">
+                    </picture></a>
+                  <div class="card__bottom-info"><a class="card__link-item" href="/product.html">Тишка “Get up fucking early Электрик”</a>
+                    <div class="card__price">7500 P</div>
+                    <div class="card__count">(02)</div>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__item">
+                <div class="card"><a class="card__link-img" href="/product.html">
+                    <picture class="card__pic"><img class="card__img" src="images/new-product__3.avif" alt="alt" loading="lazy">
+                    </picture></a>
+                  <div class="card__bottom-info"><a class="card__link-item" href="/product.html">Тишка “Living my Life”</a>
+                    <div class="card__price">7000 P</div>
+                    <div class="card__count">(06)</div>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__item">
+                <div class="card"><a class="card__link-img" href="/product.html">
+                    <picture class="card__pic"><img class="card__img" src="images/new-product__4.avif" alt="alt" loading="lazy">
+                    </picture></a>
+                  <div class="card__bottom-info"><a class="card__link-item" href="/product.html">Тишка “Garlic bread”</a>
+                    <div class="card__price">6500 P</div>
+                    <div class="card__count">(08)</div>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__item">
+                <div class="card"><a class="card__link-img" href="/product.html">
+                    <picture class="card__pic"><img class="card__img" src="images/new-product__5.avif" alt="alt" loading="lazy">
+                    </picture></a>
+                  <div class="card__bottom-info"><a class="card__link-item" href="/product.html">Тишка “My ex is an idiot”</a>
+                    <div class="card__price">7000 P</div>
+                    <div class="card__count">(10)</div>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__item">
+                <div class="card"><a class="card__link-img" href="/product.html">
+                    <picture class="card__pic"><img class="card__img" src="images/new-product__6.avif" alt="alt" loading="lazy">
+                    </picture></a>
+                  <div class="card__bottom-info"><a class="card__link-item" href="/product.html">Тишка “Don’t Jump”</a>
+                    <div class="card__price">6500 P</div>
+                    <div class="card__count">(01)</div>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__item">
+                <div class="card"><a class="card__link-img" href="/product.html">
+                    <picture class="card__pic"><img class="card__img" src="images/new-product__7.avif" alt="alt" loading="lazy">
+                    </picture></a>
+                  <div class="card__bottom-info"><a class="card__link-item" href="/product.html">Тишка “My ex is an idiot”</a>
+                    <div class="card__price">7000 P</div>
+                    <div class="card__count">(10)</div>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__item">
+                <div class="card"><a class="card__link-img" href="/product.html">
+                    <picture class="card__pic"><img class="card__img" src="images/new-product__8.avif" alt="alt" loading="lazy">
+                    </picture></a>
+                  <div class="card__bottom-info"><a class="card__link-item" href="/product.html">Тишка “Don’t Jump”</a>
+                    <div class="card__price">6500 P</div>
+                    <div class="card__count">(01)</div>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__item">
+                <div class="card"><a class="card__link-img" href="/product.html">
+                    <picture class="card__pic"><img class="card__img" src="images/new-product__9.avif" alt="alt" loading="lazy">
+                    </picture></a>
+                  <div class="card__bottom-info"><a class="card__link-item" href="/product.html">Тишка “Don’t Jump”</a>
+                    <div class="card__price">8 999 ₽</div>
+                    <div class="card__count">(01)</div>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__item">
+                <div class="card"><a class="card__link-img" href="/product.html">
+                    <picture class="card__pic"><img class="card__img" src="images/new-product__10.avif" alt="alt" loading="lazy">
+                    </picture></a>
+                  <div class="card__bottom-info"><a class="card__link-item" href="/product.html">Тишка “Don’t Jump”</a>
+                    <div class="card__price">6500 P</div>
+                    <div class="card__count">(01)</div>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__item">
+                <div class="card"><a class="card__link-img" href="/product.html">
+                    <picture class="card__pic"><img class="card__img" src="images/new-product__11.avif" alt="alt" loading="lazy">
+                    </picture></a>
+                  <div class="card__bottom-info"><a class="card__link-item" href="/product.html">Тишка “My ex is an idiot”</a>
+                    <div class="card__price">7000 P</div>
+                    <div class="card__count">(10)</div>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__item">
+                <div class="card"><a class="card__link-img" href="/product.html">
+                    <picture class="card__pic"><img class="card__img" src="images/new-product__12.avif" alt="alt" loading="lazy">
+                    </picture></a>
+                  <div class="card__bottom-info"><a class="card__link-item" href="/product.html">Тишка “90’s R&amp;B”</a>
+                    <div class="card__price">7000 P</div>
+                    <div class="card__count">(04)</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <button class="button button--white catalog__loadmore">Показать ещё</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <ul class="footer__top-list">
+          <li class="footer__top-list-item">Bob</li>
+          <li class="footer__top-list-item">Loves</li>
+          <li class="footer__top-list-item">You</li>
+        </ul>
+        <div class="footer__wrap-logo"><img class="footer__logo" src="images/footer__logo.svg" alt="alt" loading="lazy">
+        </div>
+        <div class="footer__main">
+          <div class="footer__help">
+            <div class="footer__title">Нужна помощь ?</div>
+            <p class="footer__help-content-sub-title">Боб всегда на связи и готовы ответить на ваши вопросы и помочь с выбором. Просто напишите нам</p><a class="button footer__button-help" href="#">Написать менеджеру</a>
+          </div>
+          <ul class="footer__main-content">
+            <li class="footer__main-block footer__main-block--pages">
+              <div class="footer__title">Страницы</div>
+              <ul class="footer__main-list">
+                <li class="footer__main-list-item"><a class="footer__main-link" href="#">Каталог</a></li>
+                <li class="footer__main-list-item"><a class="footer__main-link" href="#">История Bob Lee</a></li>
+                <li class="footer__main-list-item"><a class="footer__main-link" href="#">LookBook</a></li>
+                <li class="footer__main-list-item"><a class="footer__main-link" href="#">Контакты</a></li>
+              </ul>
+            </li>
+            <li class="footer__main-block footer__main-block--clients">
+              <div class="footer__title">Клиентам</div>
+              <ul class="footer__main-list">
+                <li class="footer__main-list-item"><a class="footer__main-link" href="#">Часто задаваемые вопросы</a></li>
+                <li class="footer__main-list-item"><a class="footer__main-link" href="#">Уход за изделиями</a></li>
+                <li class="footer__main-list-item"><a class="footer__main-link" href="#">Условия возврата</a></li>
+                <li class="footer__main-list-item"><a class="footer__main-link" href="#">Политика конфиденциальности</a></li>
+                <li class="footer__main-list-item"><a class="footer__main-link" href="#">Публичная оферта</a></li>
+              </ul>
+            </li>
+            <li class="footer__main-block">
+              <div class="footer__title">Социальные сети</div>
+              <ul class="footer__soc-list">
+                <li class="footer__soc-list-item"><a class="footer__soc-link" href="#" target="_blank"><img class="footer__soc-img" src="images/inst.svg" alt="alt" loading="lazy"></a></li>
+                <li class="footer__soc-list-item"><a class="footer__soc-link" href="#" target="_blank"><img class="footer__soc-img" src="images/mail.svg" alt="alt" loading="lazy"></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <ul class="footer__bottom-list">
+          <li class="footer__bottom-item footer__bottom-item--content">©<span class="footer__year">2025</span><span class="footer__bottom-span-bold">BOB LEE</span></li>
+          <li class="footer__bottom-item"><a class="footer__bottom-link" href="#" target="_blank">Bas One Studio</a></li>
+        </ul>
+      </div>
+    </footer>
+  <script defer src="main.5fc37a50271c7d5522fb.js"></script></body>
+</html>
