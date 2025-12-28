@@ -7,7 +7,7 @@
     <meta content="" name="description">
     <meta content="" name="keywords">
     <meta content="telephone=no" name="format-detection">
-    <title>contacts</title>
+    <title>cart</title>
   <link href="main.240f2b3cb6544774e786.css" rel="stylesheet"></head>
   <body>
     <header class="header">
@@ -46,56 +46,114 @@
         <ul class="container breadcrumbs__container">
           <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Главная</a>
           </li>
-          <li class="breadcrumbs__item"><span class="breadcrumbs__link">Контакты</span>
+          <li class="breadcrumbs__item"><span class="breadcrumbs__link">Корзина</span>
           </li>
         </ul>
       </section>
-      <section class="contacts">
+      <section class="cart">
         <div class="container">
-          <h1 class="contacts__title">Контакты</h1>
-          <div class="contacts__wrapper">
-            <div class="contacts__info">
-              <h2 class="contacts__info-title">По всем вопросам</h2>
-              <address class="contacts__adress">
-                <div class="contacts__adress-block">
-                  <div class="contacts__adress-block-span">Телефон</div><a class="contacts__adress-block-link" href="tel:+79772766665">+7 (977) 276-66-65</a>
-                </div>
-                <div class="contacts__adress-block">
-                  <div class="contacts__adress-block-span">Электронная почта</div><a class="contacts__adress-block-link" href="mailto:mrboblee@mail.ru">mrboblee@mail.ru</a>
-                </div>
-                <div class="contacts__adress-block">
-                  <div class="contacts__adress-block-span">Инстаграм*</div><a class="contacts__adress-block-link" href="https://www.instagram.com/mister.bob.lee/" target="_blank">@mister.bob.lee</a><span class="contacts__adress-block-alert">*запрещённая в РФ соцсеть компании Meta</span>
-                </div>
-              </address>
-              <hr>
-              <h2 class="contacts__info-title">По всем вопросам</h2>
-              <address class="contacts__adress">
-                <div class="contacts__adress-block contacts__adress-block--hours">
-                  <h3 class="contacts__adress-block-name-store">YAUZA STORE</h3>
-                  <div class="contacts__adress-wrapper">
-                    <div class="contacts__adress-block-span">Адрес</div><a href="https://yandex.ru/maps/-/CLgPBS9W" target="_blank">г. Москва, Лучников пер. 4с1 (м. Китай-Город)</a>
+          <h1 class="cart__title">Корзина</h1>
+          <form class="cart__form woocommerce-cart-form" action="" method="post">
+            <ul class="cart__list">
+              <li class="cart__item"><a class="cart__link-img" href="#">
+                  <picture class="cart__pic"><img class="cart__img" src="images/prod_one.webp" alt="alt" loading="lazy">
+                  </picture></a>
+                <div class="cart__info-block">
+                  <div class="cart__head-info">
+                    <div class="cart__item-title">Тишка “I live, you follow the rules”</div>
+                    <div class="cart__item-price">7000 Р</div>
                   </div>
-                  <div class="contacts__adress-wrapper">
-                    <div class="contacts__adress-block-span">Рабочий график</div>
-                    <div class="contacts__adress-block-hours">12:00 - 21:00, без выходных</div>
+                  <div class="cart__item-composition">
+                    <div class="cart__item-composition-title cart__item-prod-copmtitle">Состав</div>
+                    <div class="cart__item-composition">46% хлопок, 46% полиэстер, 8% эластан</div>
                   </div>
-                </div>
-                <div class="contacts__adress-block contacts__adress-block--hours">
-                  <h3 class="contacts__adress-block-name-store">ODMO</h3>
-                  <div class="contacts__adress-wrapper">
-                    <div class="contacts__adress-block-span">Адрес</div><a href="https://yandex.ru/maps/-/CLgPB6p5" target="_blank">г. Москва, Большой Трехсвятительский  переулок, 2/1 стр 1</a>
+                  <div class="cart__item-sizes-applic">
+                    <div class="cart__item-size">
+                      <div class="cart__item-size-title cart__item-prod-copmtitle">Размеры</div>
+                      <div class="cart__item-size-target">OS</div>
+                    </div>
+                    <div class="cart__item-applic">
+                      <div class="cart__item-applic-title cart__item-prod-copmtitle">Нанесение</div>
+                      <div class="cart__item-applic-target">DTF</div>
+                    </div>
                   </div>
-                  <div class="contacts__adress-wrapper">
-                    <div class="contacts__adress-block-span">Рабочий график</div>
-                    <div class="contacts__adress-block-hours">11:00 - 21:00, без выходных</div>
+                  <div class="cart__count-del">
+                    <div class="cart__count-wrapper">
+                      <button class="cart__count-btn cart__count-btn-minus" data-id-prod="12312312" data-action="loss"></button>
+                      <input class="cart__count-input" type="number" value="1">
+                      <button class="cart__count-btn cart__count-btn-plus" data-id-prod="12312312" data-action="gross"></button>
+                    </div>
+                    <button class="cart__count-delete" data-id-prod="12312312">Удалить</button>
                   </div>
                 </div>
-              </address>
-            </div>
-            <div class="contacts__map"></div>
-            <picture class="contacts__pic"><img class="contacts__img" src="images/contacts__img.avif" alt="alt" loading="lazy">
-            </picture>
-          </div>
+              </li>
+              <li class="cart__item"><a class="cart__link-img" href="#">
+                  <picture class="cart__pic"><img class="cart__img" src="images/prod_two.webp" alt="alt" loading="lazy">
+                  </picture></a>
+                <div class="cart__info-block">
+                  <div class="cart__head-info">
+                    <div class="cart__item-title">Тишка “Living my Life””</div>
+                    <div class="cart__item-price">7000 Р</div>
+                  </div>
+                  <div class="cart__item-composition">
+                    <div class="cart__item-composition-title cart__item-prod-copmtitle">Состав</div>
+                    <div class="cart__item-composition">46% хлопок, 46% полиэстер, 8% эластан</div>
+                  </div>
+                  <div class="cart__item-sizes-applic">
+                    <div class="cart__item-size">
+                      <div class="cart__item-size-title cart__item-prod-copmtitle">Размеры</div>
+                      <div class="cart__item-size-target">OS</div>
+                    </div>
+                    <div class="cart__item-applic">
+                      <div class="cart__item-applic-title cart__item-prod-copmtitle">Нанесение</div>
+                      <div class="cart__item-applic-target">DTF</div>
+                    </div>
+                  </div>
+                  <div class="cart__count-del">
+                    <div class="cart__count-wrapper">
+                      <button class="cart__count-btn cart__count-btn-minus cart__count-btn-minus--active" data-id-prod="12312312" data-action="loss"></button>
+                      <input class="cart__count-input" type="number" value="3">
+                      <button class="cart__count-btn cart__count-btn-plus" data-id-prod="12312312" data-action="gross"></button>
+                    </div>
+                    <button class="cart__count-delete" data-id-prod="12312312">Удалить</button>
+                  </div>
+                </div>
+              </li>
+              <li class="cart__item"><a class="cart__link-img" href="#">
+                  <picture class="cart__pic"><img class="cart__img" src="images/prod_three.webp" alt="alt" loading="lazy">
+                  </picture></a>
+                <div class="cart__info-block">
+                  <div class="cart__head-info">
+                    <div class="cart__item-title">Тишка “I live, you follow the rules”</div>
+                    <div class="cart__item-price">6500 P</div>
+                  </div>
+                  <div class="cart__item-composition">
+                    <div class="cart__item-composition-title cart__item-prod-copmtitle">Состав</div>
+                    <div class="cart__item-composition">46% хлопок, 46% полиэстер, 8% эластан</div>
+                  </div>
+                  <div class="cart__item-sizes-applic">
+                    <div class="cart__item-size">
+                      <div class="cart__item-size-title cart__item-prod-copmtitle">Размеры</div>
+                      <div class="cart__item-size-target">OS</div>
+                    </div>
+                    <div class="cart__item-applic">
+                      <div class="cart__item-applic-title cart__item-prod-copmtitle">Нанесение</div>
+                      <div class="cart__item-applic-target">DTF</div>
+                    </div>
+                  </div>
+                  <div class="cart__count-del">
+                    <div class="cart__count-wrapper">
+                      <button class="cart__count-btn cart__count-btn-minus" data-id-prod="12312312" data-action="loss"></button>
+                      <input class="cart__count-input" type="number" value="1">
+                      <button class="cart__count-btn cart__count-btn-plus" data-id-prod="12312312" data-action="gross"></button>
+                    </div>
+                    <button class="cart__count-delete" data-id-prod="12312312">Удалить</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <button class="button cart__submit" type="submit">Оформить Заказ</button>
+          </form>
         </div>
       </section>
     </main>
